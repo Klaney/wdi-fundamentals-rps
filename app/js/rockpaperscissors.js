@@ -22,8 +22,12 @@ function randomPlay() {
 ////////////////////////////////////////////////
 
 function getPlayerMove(move) {
-    // Write an expression that operates on a variable called `move`
-    // If a `move` has a value, your expression should evaluate to that value.
+    var move;// Write an expression that operates on a variable called `move`
+    if (move = "Rock"){
+        return "rock";
+    } else {
+        getInput();
+    } // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `getInput()`.
     return /* Your Expression */;
 }
