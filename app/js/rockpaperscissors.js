@@ -32,6 +32,7 @@ function getPlayerMove(move) {
     } else {
          getInput();
     }
+    move= playerMove;
      // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `getInput()`. /* Your Expression */;
 }
@@ -47,7 +48,7 @@ function getComputerMove(move) {
     } else {
          randomPlay();
     }
-
+move=computerMove;
 
     // Write an expression that operates on a variable called `move`
     // If a `move` has a value, your expression should evaluate to that value.
@@ -83,7 +84,7 @@ function playToFive() {
     getPlayerMove();
         getComputerMove();
         getWinner();
-    for (var i = 0; i <=5; i+=1){
+    for (var i = playerWins || computerWins; i === 5;){
         if (playerWins === true){
             console.log("Yay! You won!");
             playerWins + 1;
